@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mint
+  name: un
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mint
+      app: un
   template:
     metadata:
       labels:
-        app: mint
+        app: un
     spec:
       containers:
-      - image: okteto.dev/mint:latest
-        name: mint
+      - image: okteto.dev/un:latest
+        name: un
         ports:
         - containerPort: 8080
         env:
